@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { NavigationList } from "@/utils/navList";
 import { PiBoundingBoxThin, PiShootingStarThin } from "react-icons/pi";
 import { MdTabUnselected } from "react-icons/md";
+import { LiaSignInAltSolid } from "react-icons/lia";
 
 export default function BlogHeader() {
   const NavList = NavigationList;
@@ -33,7 +34,7 @@ export default function BlogHeader() {
   return (
     <header
       className="flex flex-row w-full h-20 fixed z-20 top-0 left-0 justify-between items-center 
-      p-4 lg:pl-20 lg:pr-20 bg-gradient-to-t from-slate-300"
+      p-4 lg:pl-20 lg:pr-20 bg-gray-100"
     >
       <div className="text-left justify-start w-1/5 text-xl md:text-xl lg:text-2xl font-bold not-italic">
         <Link href="/blog" className="w-full flex flex-row gap-2">
@@ -83,9 +84,8 @@ export default function BlogHeader() {
             className="w-full justify-center gap-2 flex flex-row text-center px-4 py-2 
           rounded-full  bg-white text-green-500 font-semibold hover:bg-green-500 hover:text-white "
           >
-            <PiShootingStarThin />
-            <p>Get Started</p>
-            <PiShootingStarThin />
+            <p>Sign In</p>
+            <LiaSignInAltSolid size={24} />
           </button>
         </div>
       ) : (
@@ -159,12 +159,11 @@ export default function BlogHeader() {
 
         {/* Display Get Started button on larger devices */}
         <button
-          className="w-40 justify-center gap-2 lg:flex md:flex flex-row  bg-white text-green-500 font-semibold hover:bg-green-500 hover:text-white 
-         px-3 py-2 rounded-full hidden sm:block"
+          className="w-40 justify-center gap-2 lg:flex md:flex flex-row  bg-white text-green-500 font-semibold hover:bg-green-500 
+          hover:text-white px-3 py-2 rounded-full hidden sm:block"
         >
-          <PiShootingStarThin className="hidden lg:block" />
-          <p>Get Started</p>
-          <PiShootingStarThin className="hidden lg:block" />
+          <p>Sign In</p>
+          <LiaSignInAltSolid size={24} className="hidden lg:block" />
         </button>
       </div>
     </header>
