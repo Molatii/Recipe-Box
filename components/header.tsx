@@ -3,11 +3,11 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { NavigationList } from "@/utils/navList";
-import { PiBoundingBoxThin, PiShootingStarThin } from "react-icons/pi";
+import { PiBoundingBoxThin } from "react-icons/pi";
 import { MdTabUnselected } from "react-icons/md";
 import { LiaSignInAltSolid } from "react-icons/lia";
 
-export default function BlogHeader() {
+export default function Header() {
   const NavList = NavigationList;
   const [selectedNav, setSelectedNav] = useState("Home");
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -37,9 +37,9 @@ export default function BlogHeader() {
       p-4 lg:pl-20 lg:pr-20 bg-gray-100"
     >
       <div className="text-left justify-start w-1/5 text-xl md:text-xl lg:text-2xl font-bold not-italic">
-        <Link href="/blog" className="w-full flex flex-row gap-2">
+        <Link href="/" className="w-full flex flex-row gap-2">
           <div className="bg-green-500 text-white font-extrabold p-1 rounded">
-            <PiBoundingBoxThin size={30} className="" />
+            <PiBoundingBoxThin size={30} />
           </div>
           <span className="text-green-500 mt-2">
             <p className="text-primary">Recipe</p>
@@ -82,7 +82,7 @@ export default function BlogHeader() {
           ))}
           <button
             className="w-full justify-center gap-2 flex flex-row text-center px-4 py-2 
-          rounded-full  bg-white text-green-500 font-semibold hover:bg-green-500 hover:text-white "
+          rounded-full bg-white text-green-500 font-semibold hover:bg-green-500 hover:text-white"
           >
             <p>Sign In</p>
             <LiaSignInAltSolid size={24} />
@@ -157,9 +157,9 @@ export default function BlogHeader() {
           )}
         </button>
 
-        {/* Display Get Started button on larger devices */}
+        {/* Display SingIn button on larger devices */}
         <button
-          className="w-40 justify-center gap-2 lg:flex md:flex flex-row  bg-white text-green-500 font-semibold hover:bg-green-500 
+          className="w-40 justify-center gap-2 lg:flex md:flex flex-row bg-white text-green-500 font-semibold hover:bg-green-500 
           hover:text-white px-3 py-2 rounded-full hidden sm:block"
         >
           <p>Sign In</p>

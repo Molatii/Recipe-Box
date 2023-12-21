@@ -16,7 +16,7 @@ export default function HeroComponent() {
 
       <div
         id="centered-content"
-        className="flex  flex-col justify-center items-center mt-14 p-4 lg:pl-20 lg:pr-20 relative z-10"
+        className="flex  flex-col justify-center items-center mt-10 p-4 lg:pl-20 lg:pr-20 relative z-10"
       >
         <p className="text-center mb-6 text-3xl md:text-5xl lg:text-6xl not-italic text-white font-semibold ">
           Share your recipes with
