@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { NavigationList } from "@/utils/navList";
+import { NavigationList } from "@/utils/UI_Data";
 import { PiBoundingBoxThin } from "react-icons/pi";
 import { MdTabUnselected } from "react-icons/md";
 import { LiaSignInAltSolid } from "react-icons/lia";
