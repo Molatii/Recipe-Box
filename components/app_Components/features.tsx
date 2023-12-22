@@ -1,4 +1,4 @@
-import { FeaturesCard } from "./featuresCard";
+import { FeaturesCard } from "../cards/featuresCard";
 import { TfiWrite } from "react-icons/tfi";
 import { IoIosShareAlt } from "react-icons/io";
 import { MdOutlinePayments } from "react-icons/md";

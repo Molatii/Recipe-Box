@@ -24,3 +24,7 @@ body {
 #slider::-webkit-scrollbar {
   display: none;
 }
+
+#slider-2::-webkit-scrollbar {
+  display: none;
+}

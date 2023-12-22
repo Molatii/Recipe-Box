@@ -1,9 +1,10 @@
-import CTAComponent from "@/components/ctaComponent";
-import Features from "@/components/features";
-import Footer from "@/components/footer";
-import Header from "@/components/header";
-import HeroComponent from "@/components/hero";
-import PopularComponent from "@/components/popularComponent";
+import Categories from "@/components/app_Components/categories";
+import CTAComponent from "@/components/app_Components/ctaComponent";
+import Features from "@/components/app_Components/features";
+import Footer from "@/components/app_Components/footer";
+import Header from "@/components/app_Components/header";
+import HeroComponent from "@/components/app_Components/hero";
+import PopularComponent from "@/components/app_Components/popularComponent";
 
 export default function Home() {
   return (
@@ -12,15 +13,7 @@ export default function Home() {
       <HeroComponent />
       <PopularComponent />
       <Features />
-      <div className="p-4 lg:pl-20 lg:pr-20 mt-12">
-        <p className="mb-8">
-          Special file conventions are used to create UI for each routeThe most
-          common are pages to show UI unique to a and layouts to show UI that is
-          shared across multiple routes. For example, to create your first page,
-          add a page.js file inside the app directory and export a React
-          component:
-        </p>
-      </div>
+      <Categories />
       <CTAComponent />
       <Footer />
     </main>

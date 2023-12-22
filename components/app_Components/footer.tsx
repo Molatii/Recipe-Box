@@ -14,8 +14,8 @@ export default function Footer() {
   );
 
   return (
-    <footer className="bg-slate-600 p-4 lg:pl-20 lg:pr-20">
-      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+    <footer className="bg-slate-600 w-full p-4 lg:pl-20 lg:pr-20">
+      <div className="mx-auto w-full py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <Link

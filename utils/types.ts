@@ -46,7 +46,7 @@ export type CategoryListProps = {
   categoryId: string;
   categoryImage: string;
   categoryName: string;
-}[];
+};
 
 
 

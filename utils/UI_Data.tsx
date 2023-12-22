@@ -79,7 +79,7 @@ export const RecipesData = [
   },
 ];
 
-export const categoryData: CategoryListProps = [
+export const categoryData = [
   {
     categoryId: "c3",
     categoryImage: "/demoImages/categories/african.jpg",
