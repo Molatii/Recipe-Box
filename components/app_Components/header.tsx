@@ -71,8 +71,8 @@ export default function Header() {
               }}
             >
               <Link
-                href={NavData.address}
                 onClick={() => setSelectedNav(NavData.name)}
+                href={NavData.address}
                 className="inline-flex gap-2 hover:text-green-500"
               >
                 {NavData.name}

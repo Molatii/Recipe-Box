@@ -85,12 +85,12 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <Link href="#" className="text-white hover:text-green-500">
+                  <Link href="/privacy" className="text-white hover:text-green-500">
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-white hover:text-green-500">
+                  <Link href="/terms" className="text-white hover:text-green-500">
                     Terms &amp; Conditions
                   </Link>
                 </li>
@@ -108,7 +108,11 @@ export default function Footer() {
           <div className="flex mt-4 sm:justify-center sm:mt-0">
             <Icon href="#" icon={<FaLinkedin size={20} />} label="Linkedin" />
             <Icon href="#" icon={<FaSquareXTwitter size={20} />} label="x" />
-            <Icon href="#" icon={<FaGithub size={20} />} label="GitHub" />
+            <Icon
+              href="https://github.com/Molatii/Recipe-Box"
+              icon={<FaGithub size={20} />}
+              label="GitHub"
+            />
           </div>
         </div>
       </div>
