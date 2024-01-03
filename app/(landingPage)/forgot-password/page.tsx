@@ -1,8 +1,9 @@
 import { PiBoundingBoxThin } from "react-icons/pi";
 import Link from "next/link";
-import SignUpForm from "@/components/app_Components/signUp";
+import ForgotPasswordForm from "@/components/app_Components/forgotpassword";
 
-export default function SignUp() {
+
+export default function ForgotPassword() {
   return (
     <main className="flex w-full min-h-screen flex-col lg:flex-row">
       <div className="w-full lg:w-[40%] bg-green-500">
@@ -22,7 +23,7 @@ export default function SignUp() {
         </div>
       </div>
       <div className="w-full lg:w-[60%] bg-white justify-center">
-        <SignUpForm />
+        <ForgotPasswordForm />
       </div>
     </main>
   );

@@ -9,7 +9,7 @@ import { LiaSignInAltSolid } from "react-icons/lia";
 
 export default function Header() {
   const NavList = NavigationList;
-  const [selectedNav, setSelectedNav] = useState("Home");
+  const [selectedNav, setSelectedNav] = useState("");
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isOverlayVisible, setOverlayVisible] = useState(false);
 
@@ -80,13 +80,15 @@ export default function Header() {
               </Link>
             </p>
           ))}
-          <button
-            className="w-full justify-center gap-2 flex flex-row text-center px-4 py-2 
+          <Link href="/sign-in">
+            <button
+              className="w-full justify-center gap-2 flex flex-row text-center px-4 py-2 
           rounded-full bg-white text-green-500 font-semibold hover:bg-green-500 hover:text-white"
-          >
-            <p>Sign In</p>
-            <LiaSignInAltSolid size={24} />
-          </button>
+            >
+              <p>Sign In</p>
+              <LiaSignInAltSolid size={24} />
+            </button>
+          </Link>
         </div>
       ) : (
         // Display big screen list on larger devices
@@ -158,13 +160,15 @@ export default function Header() {
         </button>
 
         {/* Display SingIn button on larger devices */}
-        <button
-          className="w-40 justify-center gap-2 lg:flex md:flex flex-row bg-white text-green-500 font-semibold hover:bg-green-500 
+        <Link href="/sign-in">
+          <button
+            className="w-40 justify-center gap-2 lg:flex md:flex flex-row bg-white text-green-500 font-semibold hover:bg-green-500 
           hover:text-white px-3 py-2 rounded-full hidden sm:block"
-        >
-          <p>Sign In</p>
-          <LiaSignInAltSolid size={24} className="hidden lg:block" />
-        </button>
+          >
+            <p>Sign In</p>
+            <LiaSignInAltSolid size={24} className="hidden lg:block" />
+          </button>
+        </Link>
       </div>
     </header>
   );

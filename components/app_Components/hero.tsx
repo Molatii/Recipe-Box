@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { PiShootingStarThin } from "react-icons/pi";
 
 export default function HeroComponent() {
@@ -23,6 +24,7 @@ export default function HeroComponent() {
           <br />
           the world & <span className="text-green-500">earn!</span>
         </p>
+        <Link href="/sign-up">
         <button
           className="w-60 justify-center gap-2 mt-4 inline-flex bg-white text-green-500 font-semibold hover:bg-green-500 
           hover:text-white p-3 rounded-full"
@@ -30,7 +32,8 @@ export default function HeroComponent() {
           <PiShootingStarThin size={30} />
           <p className="text-lg font-semibold capitalize">get started</p>
           <PiShootingStarThin size={30} />
-        </button>
+          </button>
+          </Link>
       </div>
     </div>
   );

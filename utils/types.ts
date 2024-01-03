@@ -21,10 +21,30 @@ export interface NavigationItem {
   address: string;
 };
 
-//cta email type
+//cta email type & reset password
 export interface FormDataType {
   email: string;
 };
+export interface ResetDataType {
+  password: string;
+  passwordConfirmation: string;
+};
+
+//sign in
+export interface SignInFormDataType {
+  email: string;
+  password?: string;
+};
+
+//sign up
+export interface SignUpFormDataType {
+  email: string;
+  password: string;
+  username: string;
+  country: string;
+  userProfession: string;
+};
+
 
 //recipe data type
 export type RecipeListProps = {
