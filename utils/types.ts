@@ -1,5 +1,10 @@
 import { ReactNode } from "react";
 
+//redux provider 
+export interface childrenProps {
+  children: ReactNode;
+}
+
 //footer social props
 export interface SocialIconProps {
   href: string;

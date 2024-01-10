@@ -2,7 +2,7 @@ import { PiBoundingBoxThin } from "react-icons/pi";
 import Link from "next/link";
 import ResetForm from "@/components/app_Components/formResetPassword";
 
-export default function ForgotPassword() {
+export default function ResetPassword() {
   return (
     <main className="flex w-full min-h-screen flex-col lg:flex-row">
       <div className="w-full lg:w-[40%] bg-green-500">

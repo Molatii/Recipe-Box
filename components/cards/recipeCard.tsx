@@ -34,7 +34,7 @@ export const RecipeCard = ({
       className="flex flex-col sm:h-[380px] h-[260px] w-[260px] mb-4 sm:mb-2 ml-2 sm:mr-1 mr-2  rounded-lg shadow-md shadow-slate-500
            cursor-pointer"
     >
-       <Link href={`/recipes/${recipeId}`}>
+       <Link href={`/recipeDetails/${recipeId}`}>
        <div
         id="img"
         className="border-none bg-cover bg-center w-[260px] sm:h-[205px] h-[100px] rounded-tr rounded-tl"
