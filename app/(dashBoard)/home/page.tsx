@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main className="w-full">
       <DashboardLayout>
-        <p>here 22222222222222222222222222222222222</p>
+        <p>Home</p>
         </DashboardLayout>
     </main>
   );

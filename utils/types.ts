@@ -30,6 +30,12 @@ export interface NavigationItem {
 export interface FormDataType {
   email: string;
 };
+
+
+export interface SearchDataType {
+  searchData: string;
+};
+
 export interface ResetDataType {
   password: string;
   passwordConfirmation: string;

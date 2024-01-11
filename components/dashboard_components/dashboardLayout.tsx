@@ -14,13 +14,13 @@ const DashboardLayout: React.FC<childrenProps> = ({ children }) => {
         {/* Sidebar */}
         <Sidebar />
 
-      <div className="w-full lg:w-[85%] 2xl:w[85%] flex flex-col">
+      <div className="w-full lg:w-[83%] 2xl:w[83%] flex flex-col">
         {/* Header components */}
               <TopHeader />
               <MobileHeader />
 
         {/* Main Content */}
-        <main className="flex p-4 mt-6 bg-white">
+        <main className="flex p-4 mt-9 bg-white">
           {children}
         </main>
       </div>
