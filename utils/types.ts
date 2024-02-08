@@ -5,6 +5,12 @@ export interface childrenProps {
   children: ReactNode;
 }
 
+//menu list props
+export interface MenuListDataType {
+  isMenuOpen: boolean;
+};
+
+
 //footer social props
 export interface SocialIconProps {
   href: string;
@@ -22,6 +28,12 @@ export interface FeaturesDataProps {
 
 //navigation types
 export interface NavigationItem {
+  name: string;
+  address: string;
+};
+
+export type HomeNavigationItem = {
+  icon: ReactNode;
   name: string;
   address: string;
 };

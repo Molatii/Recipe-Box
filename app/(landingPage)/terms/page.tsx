@@ -19,16 +19,16 @@ export default function Terms() {
         </div>
         <div id="terms" className="text-left text-gray-600">
           <p className="mb-8">
-            Welcome to RecipeBox! These terms and conditions outline the rules
-            and regulations for the use of the RecipeBox website. By accessing
+            Welcome to Recipe.com! These terms and conditions outline the rules
+            and regulations for the use of the Recipe.com website. By accessing
             this website, we assume you accept these terms and conditions in
-            full. Do not continue to use RecipeBox if you do not accept all of
+            full. Do not continue to use Recipe.com if you do not accept all of
             the terms and conditions stated on this page.
           </p>
 
           <h2 className="text-2xl font-bold mb-4">1. The Platform</h2>
           <p className="mb-2">
-            1.1. RecipeBox is a platform designed for users to share their food
+            1.1. Recipe.com is a platform designed for users to share their food
             recipes with the community.
             <br />
             1.2. The platform includes categories such as breakfast recipes,
@@ -41,7 +41,7 @@ export default function Terms() {
           </p>
           <h2 className="text-2xl font-bold mb-4">2. Recipe Posting</h2>
           <p className="mb-2">
-            2.1. Users are responsible for the content they post on RecipeBox,
+            2.1. Users are responsible for the content they post on Recipe.com,
             ensuring it complies with our community guidelines and applicable
             laws.
             <br />
@@ -54,7 +54,7 @@ export default function Terms() {
             3. Paid Subscription Option
           </h2>
           <p className="mb-2">
-            3.1. RecipeBox offers a paid recipe option for users who wish to
+            3.1. Recipe.com offers a paid recipe option for users who wish to
             monetize their recipes.
             <br />
             3.2. Users can choose to make their recipes available for free or
@@ -67,7 +67,7 @@ export default function Terms() {
             4. Display of Popular Recipes
           </h2>
           <p className="mb-2">
-            4.1. The landing page of RecipeBox will showcase popular recipes,
+            4.1. The landing page of Recipe.com will showcase popular recipes,
             providing users with a curated selection of trending culinary
             creations.
           </p>
@@ -79,7 +79,7 @@ export default function Terms() {
           </p>
           <h2 className="text-2xl font-bold mb-4">6. User Conduct</h2>
           <p className="mb-2">
-            6.1. Users are expected to engage with RecipeBox in a respectful and
+            6.1. Users are expected to engage with Recipe.com in a respectful and
             lawful manner.
             <br />
             6.2. Any form of harassment, discrimination, or violation of these
@@ -88,7 +88,7 @@ export default function Terms() {
           </p>
           <h2 className="text-2xl font-bold mb-4">7. Privacy Policy</h2>
           <p className="mb-2">
-            7.1. RecipeBox respects user privacy and complies with all relevant
+            7.1. Recipe.com respects user privacy and complies with all relevant
             data protection laws. Please refer to our Privacy Policy for
             detailed information.
           </p>
@@ -96,14 +96,14 @@ export default function Terms() {
             8. Modifications to Terms and Conditions
           </h2>
           <p className="mb-2">
-            8.1. RecipeBox reserves the right to modify these terms and
+            8.1. Recipe.com reserves the right to modify these terms and
             conditions at any time. Users will be notified of significant
             changes.
           </p>
           <p className="mb-2 mt-4">
-            By using RecipeBox, you acknowledge and agree to these terms and
+            By using Recipe.com, you acknowledge and agree to these terms and
             conditions. If you have any questions or concerns, please contact us
-            at contact@recipebox.com.
+            at contact@recipe.com.
           </p>
         </div>
       </div>

@@ -25,7 +25,7 @@ export default function AboutComponent() {
       </div>
       <div id="main" className="flex justify-center  text-center">
         <p className="text-gray-600 sm:w-[60%] w-full text-base text-center">
-          Welcome to RecipeBox, where passion for food meets a community of
+          Welcome to Recipe.com, where passion for food meets a community of
           culinary enthusiasts! Our platform is dedicated to providing a space
           for food lovers to share, discover, and connect through the art of
           cooking.
@@ -47,7 +47,7 @@ export default function AboutComponent() {
             Our Mission
           </p>
           <p className="text-gray-600 text-base">
-            At RecipeBox, our mission is to inspire and empower individuals to
+            At Recipe.com, our mission is to inspire and empower individuals to
             explore the world of cooking, whether you're a seasoned chef or a
             beginner in the kitchen. We believe in the power of food to bring
             people together, create memories, and share joy.
@@ -57,9 +57,9 @@ export default function AboutComponent() {
           <p className="text-center text-green-500 text-xl font-semibold mb-4">
             What We Offer
           </p>
-          <ul className="text-left gap-2">
+          <ul className="text-left gap-2 text-gray-600">
             <li>
-              <span className="font-semibold">Recipe Sharing: </span> RecipeBox
+              <span className="font-semibold">Recipe Sharing: </span> Recipe.com
               is your go-to platform for sharing your favorite recipes with the
               world. Whether it's a cherished family secret or a creative twist
               on a classic, we invite you to showcase your culinary creations.
@@ -75,7 +75,7 @@ export default function AboutComponent() {
             <li>
               <span className="font-semibold">Variety of Categories: </span>From
               breakfast delights to African Cuisine recipes and decadent
-              desserts, RecipeBox caters to a wide range of tastes and
+              desserts, Recipe.com caters to a wide range of tastes and
               preferences. Explore our diverse categories to find recipes that
               match your culinary interests.
             </li>

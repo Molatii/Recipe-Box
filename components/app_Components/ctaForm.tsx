@@ -39,7 +39,7 @@ const CtaForm = () => {
               type="email"
               name="email"
               placeholder="Your email address"
-              className="p-2  border text-base text-gray-600 border-green-500 lg:w-[400px]
+              className="p-2 border text-base text-gray-600 border-green-500 lg:w-[400px]
                md:w-[250px] w-full sm:h-14 h-12 rounded-tl-md rounded-bl-md shadow-md shadow-green-500"
             />
             <button

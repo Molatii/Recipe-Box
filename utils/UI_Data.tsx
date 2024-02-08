@@ -1,4 +1,4 @@
-import { CategoryListProps, NavigationItem, RecipeListProps } from "./types";
+import { NavigationItem } from "./types";
 
 
 export const NavigationList: NavigationItem[] = [
@@ -15,6 +15,9 @@ export const NavigationList: NavigationItem[] = [
     address: "/contact-us",
   },
 ];
+
+
+
 
 export const RecipesData = [
   {
@@ -76,6 +79,54 @@ export const RecipesData = [
     authorImage: "/demoImages/author/a2.png",
     authorName: "Suzan",
     authorStatus: "home chef",
+  },
+  {
+    recipeId: "23lnn",
+    recipeImg: "/demoImages/recipes/burger.jpg",
+    category: "Budget-Friendly",
+    title: "bugger King",
+    accessType: "Free",
+    likes: "5",
+    authorId: "Bob24",
+    authorImage: "/demoImages/author/a1.png",
+    authorName: "Bob",
+    authorStatus: "chef",
+  },
+  {
+    recipeId: "2188l",
+    recipeImg: "/demoImages/recipes/Bunny-Chow.jpg",
+    category: "African Cuisine",
+    title: "SA Bunny Chow",
+    accessType: "Premium",
+    likes: "500",
+    authorId: "Th24",
+    authorImage: "/demoImages/author/a4.png",
+    authorName: "Themba",
+    authorStatus: "chef",
+  },
+  {
+    recipeId: "2133l",
+    recipeImg: "/demoImages/recipes/Bunny-Chow.jpg",
+    category: "African Cuisine",
+    title: "SA Bunny Chow",
+    accessType: "Premium",
+    likes: "500",
+    authorId: "Th24",
+    authorImage: "/demoImages/author/a4.png",
+    authorName: "Themba",
+    authorStatus: "chef",
+  },
+  {
+    recipeId: "211l",
+    recipeImg: "/demoImages/recipes/Bunny-Chow.jpg",
+    category: "African Cuisine",
+    title: "SA Bunny Chow",
+    accessType: "Premium",
+    likes: "500",
+    authorId: "Th24",
+    authorImage: "/demoImages/author/a4.png",
+    authorName: "Themba",
+    authorStatus: "chef",
   },
 ];
 

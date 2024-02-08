@@ -14,10 +14,10 @@ export default function ResetPassword() {
             <div className="bg-white text-green-500 font-extrabold p-2 mt-1 rounded">
               <PiBoundingBoxThin size={30} />
             </div>
-            <span className="text-white mt-2">
+            <span className="text-white mt-2 -mr-2">
               <p className="text-primary">Recipe</p>
             </span>
-            <p className="text-gray-500 mt-2">Box</p>
+            <p className="text-gray-500 mt-2">.com</p>
           </Link>
         </div>
       </div>

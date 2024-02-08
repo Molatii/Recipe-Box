@@ -6,12 +6,15 @@ import { NavigationList } from "@/utils/UI_Data";
 import { PiBoundingBoxThin } from "react-icons/pi";
 import { MdTabUnselected } from "react-icons/md";
 import { LiaSignInAltSolid } from "react-icons/lia";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const NavList = NavigationList;
   const [selectedNav, setSelectedNav] = useState("");
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isOverlayVisible, setOverlayVisible] = useState(false);
+
+  const pathname = usePathname();
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
@@ -41,10 +44,10 @@ export default function Header() {
           <div className="bg-green-500 text-white font-extrabold p-1 rounded">
             <PiBoundingBoxThin size={30} />
           </div>
-          <span className="text-green-500 mt-2">
+          <span className="text-green-500 mt-2 -mr-2">
             <p className="text-primary">Recipe</p>
           </span>
-          <p className="text-gray-600 mt-2">Box</p>
+          <p className="text-slate-600 mt-2">.com</p>
         </Link>
       </div>
 
@@ -63,17 +66,15 @@ export default function Header() {
             <p
               key={NavData.address}
               className="text-lg text-center mb-8 not-italic font-bold"
-              style={{
-                color:
-                  NavData.name === selectedNav
-                    ? "#32cd32"
-                    : "var(--light-color-base-primary-dark, #)",
-              }}
             >
               <Link
                 onClick={() => setSelectedNav(NavData.name)}
                 href={NavData.address}
-                className="inline-flex gap-2 hover:text-green-500"
+                className={`inline-flex gap-2 hover:text-green-500 ${
+                pathname === NavData.address
+                  ? "text-green-500"
+                  : "text-gray-600"
+              }`}
               >
                 {NavData.name}
                 <MdTabUnselected />
@@ -96,17 +97,11 @@ export default function Header() {
           {NavList.map((NavData) => (
             <p
               key={NavData.address}
-              className="lg:text-xl text-base not-italic font-normal"
-              style={{
-                color:
-                  NavData.name === selectedNav
-                    ? "#32cd32"
-                    : "var(--light-color-base-primary-dark, #)",
-
-                borderBottom: NavData.name === selectedNav ? "solid" : "none",
-                borderBottomColor:
-                  NavData.name === selectedNav ? "#32cd32" : "transparent",
-              }}
+              className={`lg:text-xl text-base not-italic font-normal ${
+                pathname === NavData.address
+                  ? "text-green-500 border-b-2 border-green-500"
+                  : " text-gray-600"
+              }`}
             >
               <Link
                 href={NavData.address}
@@ -120,7 +115,7 @@ export default function Header() {
         </div>
       )}
 
-      <div className="w-1/5 flex flex-row gap-4 justify-end items-center">
+      <div className="w-1/5 flex flex-row  justify-end items-center">
         {/* Toggle menu icon on small devices */}
         <button
           onClick={toggleMenu}

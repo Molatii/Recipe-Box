@@ -2,12 +2,14 @@ import { Recipes } from "@/components/cards/recipes";
 import DashboardLayout from "@/components/dashboard_components/dashboardLayout";
 import { RecipesData } from "@/utils/UI_Data";
 
-export default function Home() {
+export default function Popular() {
   return (
     <main className="w-full">
       <DashboardLayout>
-        <div id="cards-container" className="w-full flex flex-wrap gap-5 ml-0 sm:ml-2">
-          
+        <div
+          id="cards-container"
+          className="w-full flex flex-wrap gap-5 ml-0 sm:ml-2"
+        >
           {RecipesData.map((recipe) => (
             <Recipes
               recipeId={recipe.recipeId}

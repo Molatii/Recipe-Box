@@ -25,10 +25,10 @@ export default function Footer() {
               <div className="bg-green-500 text-white font-extrabold p-1 rounded">
                 <PiBoundingBoxThin size={30} />
               </div>
-              <span className="text-green-500 mt-2">
+              <span className="text-green-500 mt-2 -mr-2">
                 <p className="text-primary">Recipe</p>
               </span>
-              <p className="text-white mt-2">Box</p>
+              <p className="text-white mt-2">.com</p>
             </Link>
           </div>
 
@@ -85,12 +85,18 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <Link href="/privacy" className="text-white hover:text-green-500">
+                  <Link
+                    href="/privacy"
+                    className="text-white hover:text-green-500"
+                  >
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
-                  <Link href="/terms" className="text-white hover:text-green-500">
+                  <Link
+                    href="/terms"
+                    className="text-white hover:text-green-500"
+                  >
                     Terms &amp; Conditions
                   </Link>
                 </li>
