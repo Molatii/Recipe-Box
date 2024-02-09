@@ -26,7 +26,7 @@ const UserRecipesList = () => {
           }}
         >
           <TbFreeRights size={20} />
-          <p className="ml-2 font-semibold">Free Recipes</p>
+          <p className="ml-2 font-semibold text-sm">Free Recipes</p>
         </div>
         <div
           onClick={() => setRecipeType("premium")}
@@ -36,7 +36,7 @@ const UserRecipesList = () => {
           }}
         >
           <MdOutlineWorkspacePremium size={20} />
-          <p className="ml-2 font-semibold">Premium Recipes</p>
+          <p className="ml-2 font-semibold text-sm">Premium Recipes</p>
         </div>
       </div>
 
