@@ -44,7 +44,7 @@ export interface FormDataType {
 };
 
 
-export interface SearchDataType {
+export type SearchDataType = {
   searchData: string;
 };
 

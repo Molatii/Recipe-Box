@@ -4,6 +4,7 @@ import { Formik, Form, Field } from "formik";
 import { IoIosSearch } from "react-icons/io";
 import { SearchDataType } from "@/utils/types";
 
+
 function SearchBar() {
   const initialValues: SearchDataType = {
     searchData: "",

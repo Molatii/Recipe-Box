@@ -2,6 +2,7 @@ import DashboardLayout from "@/components/dashboard_components/dashboardLayout";
 import Image from "next/image";
 import userIcon from "../../../public/user_icon.jpg";
 import UserRecipesList from "@/components/dashboard_components/userRecipesList";
+import { RecipesData } from "@/utils/UI_Data";
 
 export default function UserProfile() {
   return (
@@ -32,7 +33,7 @@ export default function UserProfile() {
             </div>
           </div>
 
-          <UserRecipesList />
+          <UserRecipesList RecipesData={RecipesData} />
         </div>
       </DashboardLayout>
     </main>

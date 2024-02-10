@@ -1,13 +1,18 @@
 "use client";
 
-import { RecipesData } from "@/utils/UI_Data";
 import { MdOutlineWorkspacePremium } from "react-icons/md";
 import { Recipes } from "../cards/recipes";
 import { useState } from "react";
 import { TbFreeRights } from "react-icons/tb";
 import { ImFileEmpty } from "react-icons/im";
+import { RecipeListProps } from "@/utils/types";
+import RecipesPagination from "../pagination/recipesPagination";
 
-const UserRecipesList = () => {
+interface RecipesProps {
+  RecipesData: RecipeListProps[];
+}
+
+const UserRecipesList = ({RecipesData }: RecipesProps) => {
   const [recipeType, setRecipeType] = useState("free");
   const free = "free";
   const pre = "premium";
@@ -44,23 +49,7 @@ const UserRecipesList = () => {
         {recipeType === "free" && (
           <>
             {RecipesData.length ? (
-              <div className="w-full flex flex-wrap gap-5">
-                {RecipesData.map((recipe) => (
-                  <Recipes
-                    recipeId={recipe.recipeId}
-                    recipeImg={recipe.recipeImg}
-                    category={recipe.category}
-                    title={recipe.title}
-                    accessType={recipe.accessType}
-                    likes={recipe.likes}
-                    authorId={recipe.authorId}
-                    authorImage={recipe.authorImage}
-                    authorName={recipe.authorName}
-                    authorStatus={recipe.authorStatus}
-                    key={recipe.recipeId}
-                  />
-                ))}
-              </div>
+              <RecipesPagination RecipesData={RecipesData} />
             ) : (
               <div className="w-full justify-center text-center">
                 <div className="p-4 pt-8 pb-8  text-slate-600 items-center flex flex-col">
